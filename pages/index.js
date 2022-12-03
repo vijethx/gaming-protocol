@@ -8,7 +8,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
 	return (
-		<div className="">
+		<div className="container m-auto">
 			<Head>
 				<title>Create Next App</title>
 				<meta
@@ -25,8 +25,8 @@ export default function Home() {
 
 			<Hero />
 
-			<div className="">
-				<h2>Curated Drops</h2>
+			<div className="py-20">
+				<h2 className="font-[Helvetica] text-xl">Curated Drops</h2>
 				<div className="flex items-center justify-evenly">
 					<Collections />
 					<Collections />
@@ -35,14 +35,16 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="">
-				<h2>Curated Collections</h2>
-				<div className="flex flex-col items-center">
-					<Nft />
+				<h2 className="font-[Helvetica] text-xl">
+					Curated Collections
+				</h2>
+				<div className="bg-gradient-to-r from-sky-400 to-cyan-300 rounded-2xl">
 					<Nft />
 				</div>
 			</div>
-
-			<footer className=""></footer>
+			<footer className="text-center py-5">
+				MetaForge @ ETH India 2022
+			</footer>
 		</div>
 	);
 }
